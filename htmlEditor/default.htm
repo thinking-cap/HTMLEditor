@@ -10,12 +10,14 @@
     <link type="text/css" rel="stylesheet" media="all" href="Content/summernote/summernote-bs4.css" />
     <script type="text/javascript">
         $(document).ready(function () {
+            // initialize the editor
             $('.editable').summernote({
+                // create the toolbar, simple don't give code view access. People will just mess it up //
                 toolbar: [
-              ['style', ['style']],
-              ['font', ['bold', 'underline', 'clear']],
-              ['color', ['color']],
-              ['para', ['ul', 'ol', 'paragraph']]
+                            ['style', ['style']],
+                            ['font', ['bold', 'underline', 'clear']],
+                            ['color', ['color']],
+                            ['para', ['ul', 'ol', 'paragraph']]
                 ]
             });
         });
